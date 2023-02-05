@@ -1,16 +1,24 @@
 ---
 export interface Props {
-    title: string;
-    description: string;
-    permalink: string;
+  title: string;
+  description: string;
+  permalink: string;
 }
 const { title, description, permalink } = Astro.props;
 ---
 
+<style global>
+  @import "../styles/global.css";
+</style>
+
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link
+  rel="icon"
+  type="image/x-icon"
+  href="https://avatars.githubusercontent.com/u/81493003?v=4"
+/>
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

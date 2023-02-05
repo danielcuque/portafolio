@@ -1,16 +1,24 @@
 ---
 interface Props {
-    number: string;
-    name: string;
+  name: string;
+  path: string;
 }
-const { number, name } = Astro.props;
+const { name, path } = Astro.props;
+const si = "0";
+let number = "before:content-['0" + si + "']";
 ---
 
-<div>
-    <span>
-        {number}
-    </span>
-    <p>
-        {name}
-    </p>
-</div>
+<li class="nav-item bg-slate-50">
+  <a href={path}>
+    {name}
+  </a>
+</li>
+
+<style>
+  /* li {
+    counter-increment: item 1;
+  }
+  li:before {
+    content: "0" counter(item) ".";
+  } */
+</style>
