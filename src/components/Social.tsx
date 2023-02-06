@@ -1,5 +1,5 @@
 import GitHubIcon from "./Icons/GithubIcon";
-import LinkedinIcon from "./Icons/Linkedin";
+import LinkedinIcon from "./Icons/LinkedinIcon";
 
 interface SocialItems {
   icon: React.ReactNode;
@@ -22,7 +22,7 @@ export const Social = () => {
     <div className="fixed left-6 bottom-10 w-10">
       <ul className="flex flex-col w-full h-full gap-8">
         {socialItems.map(({ icon, link }) => (
-          <li>
+          <li key={link}>
             <a className="text-base w-10 bg-white" target="_blank" href={link}>
               {icon}
             </a>
