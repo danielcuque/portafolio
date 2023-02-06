@@ -9,7 +9,7 @@ interface NavbarProps {
 const { title } = Astro.props;
 ---
 
-<nav class="flex flex-row justify-center lg:justify-between px-10 py-4">
+<nav class="flex flex-row justify-center lg:justify-between mx-16 my-4">
   <div class="hidden lg:flex">
     <img
       src="https://avatars.githubusercontent.com/u/81493003?v=4"
@@ -18,6 +18,12 @@ const { title } = Astro.props;
     />
   </div>
   <ol class="flex flex-row gap-8">
-    {navItems.map(({ name, path }) => <NavItem name={name} path={path} />)}
+    {
+      navItems.map(({ name, path }) => (
+        <li class="nav-item">
+          <NavItem name={name} path={path} />
+        </li>
+      ))
+    }
   </ol>
 </nav>

@@ -4,21 +4,8 @@ interface Props {
   path: string;
 }
 const { name, path } = Astro.props;
-const si = "0";
-let number = "before:content-['0" + si + "']";
 ---
 
-<li class="nav-item bg-slate-50">
-  <a href={path}>
-    {name}
-  </a>
-</li>
-
-<style>
-  /* li {
-    counter-increment: item 1;
-  }
-  li:before {
-    content: "0" counter(item) ".";
-  } */
-</style>
+<a href={path} class="hover:text-blue-400 text-white cursor-pointer">
+  {name}
+</a>

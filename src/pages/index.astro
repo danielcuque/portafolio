@@ -1,9 +1,15 @@
 ---
+import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
+
+import { Social } from "../components/Social";
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar />
-  <main class="min-h-full"></main>
+  <Social />
+  <main class="min-h-full">
+    <Hero />
+  </main>
 </Layout>
