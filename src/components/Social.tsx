@@ -19,11 +19,15 @@ const socialItems: SocialItems[] = [
 
 export const Social = () => {
   return (
-    <div className="fixed left-6 bottom-10 w-10">
-      <ul className="flex flex-col w-full h-full gap-8">
+    <div className="fixed left-12 bottom-10 w-10 hidden lg:block">
+      <ul className="flex flex-col w-full h-full gap-6">
         {socialItems.map(({ icon, link }) => (
-          <li key={link}>
-            <a className="text-base w-10 bg-white" target="_blank" href={link}>
+          <li key={link} className="group w-10 p-2">
+            <a
+              className="text-base fill-white group-hover:fill-blue-500 group-hover:transition group-hover:duration-200 group-hover:ease-in-out"
+              target="_blank"
+              href={link}
+            >
               {icon}
             </a>
           </li>

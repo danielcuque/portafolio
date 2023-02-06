@@ -20,7 +20,7 @@ const { title } = Astro.props;
   <ol class="flex flex-row gap-8 [counter-reset:item]">
     {
       navItems.map(({ name, path }) => (
-        <li class="">
+        <li>
           <NavItem name={name} path={path} />
         </li>
       ))
