@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        secondary: ['"Sofia Sans Extra Condensed"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
