@@ -4,12 +4,24 @@ import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 
 import { Social } from "../components/Social";
+
+import "../styles/base.css";
+import Footer from "../components/Footer.astro";
+import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar />
   <Social />
-  <main class="min-h-full">
-    <Hero />
+  <main class="px-6 md:px-12 lg:px-24 xl:px-52">
+    <section>
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+    </section>
   </main>
+  <Footer is:raw />
 </Layout>
