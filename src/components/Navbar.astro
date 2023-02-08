@@ -1,29 +1,19 @@
 ---
 import { navItems } from "../utils/navItems";
 import NavItem from "./NavItem.astro";
-
-interface NavbarProps {
-  title: string;
-}
-
-const { title } = Astro.props;
 ---
 
 <nav class="flex flex-row justify-center lg:justify-between mx-16 my-4">
   <div class="hidden lg:flex">
-    <img
-      src="https://avatars.githubusercontent.com/u/81493003?v=4"
-      alt="github-image"
-      class="w-10 h-10 rounded-full"
-    />
+    <a href="/">
+      <img
+        src="https://avatars.githubusercontent.com/u/81493003?v=4"
+        alt="github-image"
+        class="w-10 h-10 rounded-full"
+      />
+    </a>
   </div>
   <ol class="flex flex-row gap-8 [counter-reset:item]">
-    {
-      navItems.map(({ name, path }) => (
-        <li>
-          <NavItem name={name} path={path} />
-        </li>
-      ))
-    }
+    {navItems.map(({ name, path }) => <NavItem name={name} path={path} />)}
   </ol>
 </nav>
