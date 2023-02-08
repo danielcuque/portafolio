@@ -6,9 +6,11 @@ interface Props {
 const { name, path } = Astro.props;
 ---
 
-<a
-  href={path}
-  class="hover:text-blue-500 text-white cursor-pointer [counter-increment:item] lg:before:[content:'0'counters(item,'.')'.'] before:text-blue-500 before:text-sm before:mr-2 before:hidden lg:before:inline lg:after:relative lg:after:content-[''] lg:after:block lg:after:top-[0.2em] after:bg-blue-500 lg:after:h-[2px] lg:after:transition-all lg:after:w-0 lg:after:duration-200 lg:after:ease-in-out lg:after:opacity-50 lg:after:hover:w-full lg:after:hover:opacity-100"
->
-  {name}
-</a>
+<li>
+  <a
+    href={path}
+    class="hover:text-primary-50 text-white cursor-pointer [counter-increment:item] lg:before:[content:'0'counters(item,'.')'.'] before:text-primary-50 before:text-xs before:mr-2 before:hidden lg:before:inline lg:after:relative lg:after:content-[''] lg:after:block lg:after:top-[0.2em] after:bg-primary-50 lg:after:h-[2px] lg:after:transition-all lg:after:w-0 lg:after:duration-200 lg:after:ease-in-out lg:after:opacity-50 lg:after:hover:w-full lg:after:hover:opacity-100"
+  >
+    {name}
+  </a>
+</li>
