@@ -26,7 +26,7 @@ export const Social = () => {
           {socialItems.map(({ icon, link }) => (
             <li key={link} className="group w-12 p-2">
               <a
-                className="text-base fill-white group-hover:fill-primary-50 group-hover:transition group-hover:duration-200 group-hover:ease-in-out"
+                className="text-base fill-white group-hover:fill-primary-50 transition duration-200"
                 target="_blank"
                 href={link}
               >
@@ -40,7 +40,7 @@ export const Social = () => {
         <ul className="flex flex-col w-full h-full gap-6">
           <li className="group w-12 p-2">
             <a
-              className="text-xs group-hover:text-primary-50 group-hover:transition group-hover:duration-200 group-hover:ease-in-out [writing-mode:vertical-lr]"
+              className="text-xs group-hover:text-primary-50 transition group-hover:-translate-y-1 duration-200 [writing-mode:vertical-lr]"
               href="mailto:danielcuque78@gmail.com">
               danielcuque78@gmail.com
             </a>
