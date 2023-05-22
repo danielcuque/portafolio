@@ -3,20 +3,19 @@ import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 
-import { Social } from "../components/Social";
-
 import "../styles/base.css";
 
 import Footer from "../components/Footer.astro";
 import Projects from "../components/Projects.astro";
 import About from "../components/About.astro";
 import Contact from "../components/Contact.astro";
+import { Social } from "../components/Social";
 ---
 
 <Layout title="Welcome to my portafolio">
   <Navbar />
   <Social />
-  <main class="px-6 md:px-12 lg:px-24 xl:px-52">
+  <main class="px-6 md:px-28 lg:px-28 xl:px-56">
     <section>
       <Hero />
       <About />
