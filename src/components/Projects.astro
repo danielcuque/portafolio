@@ -14,18 +14,18 @@ const projects = [
     title: "U-sac",
     deploy: "https://yousac.netlify.app/",
     description: "University project to give recommendations to students",
-    techs: ["React", "TailwindCSS", "MongoDB", "Node.js"],
+    techs: ["React", "TailwindCSS", "MySQL"],
   },
 ];
 ---
 
-<section class="mt-16" id="projects">
+<section class="mt-52" id="projects">
   <h2
-    class="text-3xl font-medium before:[content:'02.'] before:text-primary-50 before:text-lg before:inline"
+    class="text-lg md:text-3xl font-medium before:[content:'02.'] before:text-primary-50 before:text-lg before:inline"
   >
     Some Projects I’ve Built
   </h2>
-  <ul class="grid grid-cols-2 gap-4 mt-8">
+  <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
     {projects.map((project) => <ProjectItem {...project} />)}
   </ul>
 </section>

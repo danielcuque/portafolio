@@ -30,7 +30,9 @@ const { github, title, deploy, description, techs } = Astro.props;
     <div class="flex flex-wrap mt-2">
       {
         techs.map((tech) => (
-          <span class="text-slate-400 text-sm mr-2 font-secondary">{tech}</span>
+          <span class="text-slate-400 text-sm mr-2 font-secondary tracking-widest">
+            {tech}
+          </span>
         ))
       }
     </div>

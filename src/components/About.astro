@@ -9,8 +9,6 @@ const skills = [
   "HTML & (S)CSS",
   "Tailwind CSS",
   "Next.js",
-  "Linux",
-  "CI/CD",
 ];
 ---
 
@@ -36,12 +34,12 @@ const skills = [
     <p class="text-gray-400 my-4">
       Here are a few technologies I've been working with recently:
     </p>
-    <ul class="grid grid-cols-3 gap-4">
+    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-4">
       {
         skills.map((skill) => (
           <li class="text-gray-400">
-            <span class="inline-block w-4 text-primary-50">•</span>
-            {skill}
+            <span class="inline-block w-4 text-primary-50">▹</span>
+            <span class="text-gray-400 text-sm md:text-base">{skill}</span>
           </li>
         ))
       }
