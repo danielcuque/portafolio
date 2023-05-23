@@ -1,0 +1,38 @@
+---
+import FolderIcon from "./Icons/FolderIcon";
+import GitHubIcon from "./Icons/GithubIcon";
+
+interface Props {
+  github: string;
+  title: string;
+  deploy: string;
+  description: string;
+  techs: string[];
+}
+
+const { github, title, deploy, description, techs } = Astro.props;
+---
+
+<li
+  class="border font-regular rounded-lg text-md block border-slate-800 group hover:border-slate-600 hover:text-slate-100 no-underline p-2.5 relative sm:p-3.5"
+>
+  <div class="flex justify-end w-full gap-4">
+    <a href={github} class="fill-white w-6" target="_blank">
+      <GitHubIcon />
+    </a>
+    <a href={deploy} target="_blank">
+      <FolderIcon />
+    </a>
+  </div>
+  <div>
+    <h4 class="text-slate-400 font-bold my-2 text-xl">{title}</h4>
+    <p class="text-slate-400 mb-4">{description}</p>
+    <div class="flex flex-wrap mt-2">
+      {
+        techs.map((tech) => (
+          <span class="text-slate-400 text-sm mr-2 font-secondary">{tech}</span>
+        ))
+      }
+    </div>
+  </div>
+</li>

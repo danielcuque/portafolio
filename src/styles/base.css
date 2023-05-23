@@ -4,10 +4,9 @@
 @tailwind utilities;
 
 @layer components {
-  a svg {
-    @apply group-hover:-translate-y-1;
+  .li-container > a > svg {
+    @apply hover:-translate-y-1 transition duration-300;
   }
-
   * {
     @apply text-white;
   }

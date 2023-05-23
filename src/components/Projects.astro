@@ -1,19 +1,31 @@
 ---
+import ProjectItem from "./ProjectItem.astro";
 const projects = [
   {
     github: "https://github.com/danielcuque/dashboard-posts",
     title: "Dashboard Posts",
     deploy: "https://grupo-9.vercel.app/",
-    description: "Dashboard to manage posts",
-    techs: ["React", "Next.js", "TailwindCSS", "MongoDB", "Node.js"],
+    description:
+      "Web application, use dashboard to manage posts with content and images",
+    techs: ["React", "TailwindCSS", "Firebase"],
+  },
+  {
+    github: "https://github.com/grupo-9-practicas-iniciales/yousac-frontend",
+    title: "U-sac",
+    deploy: "https://yousac.netlify.app/",
+    description: "University project to give recommendations to students",
+    techs: ["React", "TailwindCSS", "MongoDB", "Node.js"],
   },
 ];
 ---
 
-<section class="mt-8" id="projects">
+<section class="mt-16" id="projects">
   <h2
     class="text-3xl font-medium before:[content:'02.'] before:text-primary-50 before:text-lg before:inline"
   >
     Some Projects I’ve Built
   </h2>
+  <ul class="grid grid-cols-2 gap-4 mt-8">
+    {projects.map((project) => <ProjectItem {...project} />)}
+  </ul>
 </section>

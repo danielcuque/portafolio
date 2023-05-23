@@ -7,6 +7,9 @@ module.exports = {
         secondary: ['"Sofia Sans Extra Condensed"', "sans-serif"],
       },
       colors: {
+        main: {
+          50: "#16151D"
+        },
         primary: {
           50: "#E56105",
           100: "FEBA34",

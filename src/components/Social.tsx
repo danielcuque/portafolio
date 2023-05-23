@@ -24,9 +24,9 @@ export const Social = () => {
       <div className="fixed left-12 bottom-10 w-12 hidden lg:block">
         <ul className="flex flex-col w-full h-full gap-6">
           {socialItems.map(({ icon, link }) => (
-            <li key={link} className="group w-12 p-2">
+            <li key={link} className="group w-12 p-2 li-container">
               <a
-                className="text-base fill-white group-hover:fill-primary-50 transition duration-200"
+                className="text-base fill-white group-hover:fill-primary-50"
                 target="_blank"
                 href={link}
               >
