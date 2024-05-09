@@ -1,5 +1,5 @@
 ---
-import { navItems } from "../utils/navItems";
+import { navItems } from "@/utils/navItems";
 import NavItem from "./NavItem.astro";
 ---
 
@@ -24,18 +24,14 @@ import NavItem from "./NavItem.astro";
 <script>
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return;
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
+      navbar.style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-70px";
+      navbar.style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
   };
 </script>
-
-<!-- <style>
-  #navbar {
-    transition: top 0.3s;
-  }
-</style> -->

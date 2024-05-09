@@ -1,14 +1,15 @@
 ---
-import Hero from "../components/Hero.astro";
-import Navbar from "../components/Navbar.astro";
-import Layout from "../layouts/Layout.astro";
+import Hero from "@/components/Hero.astro";
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/layouts/Layout.astro";
 
-import "../styles/base.css";
+import "@/styles/base.css";
 
-import Projects from "../components/Projects.astro";
-import About from "../components/About.astro";
-import Contact from "../components/Contact.astro";
-import { Social } from "../components/Social";
+import Projects from "@/components/Projects.astro";
+import About from "@/components/About.astro";
+import Contact from "@/components/Contact.astro";
+import { Social } from "@/components/Social";
+import Contributions from "@/components/Contributions.astro";
 ---
 
 <Layout title="Welcome to my portafolio">
@@ -17,8 +18,9 @@ import { Social } from "../components/Social";
   <main class="px-6 md:px-28 lg:px-28 xl:px-56">
     <section>
       <Hero />
-      <About />
+      <About/>
       <Projects />
+      <Contributions />
       <Contact />
     </section>
   </main>
