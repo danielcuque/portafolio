@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@astro-github-elements/time':
+        specifier: ^0.1.4
+        version: 0.1.4
       '@astrojs/react':
         specifier: ^2.0.2
         version: 2.3.2(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -17,6 +20,9 @@ importers:
       '@astrojs/vercel':
         specifier: ^7.5.4
         version: 7.5.4(astro@2.10.15)(react@18.3.1)
+      '@github/relative-time-element':
+        specifier: ^4.4.0
+        version: 4.4.0
       '@types/react':
         specifier: ^18.0.21
         version: 18.3.1
@@ -55,6 +61,9 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@astro-github-elements/time@0.1.4':
+    resolution: {integrity: sha512-Inj7odhj5FbJ5bCaP6buFcelnMDJOAAftUP7UQA1UDwQ3A+Dwb7vsv1gbiwyCx5SoJaTQzycxO34/gOZF22i0w==}
 
   '@astrojs/compiler@1.8.2':
     resolution: {integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==}
@@ -626,6 +635,9 @@ packages:
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+
+  '@github/relative-time-element@4.4.0':
+    resolution: {integrity: sha512-CrI6oAecoahG7PF5dsgjdvlF5kCtusVMjg810EULD81TvnDsP+k/FRi/ClFubWLgBo4EGpr2EfvmumtqQFo7ow==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2413,6 +2425,10 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
+  '@astro-github-elements/time@0.1.4':
+    dependencies:
+      '@github/relative-time-element': 4.4.0
+
   '@astrojs/compiler@1.8.2': {}
 
   '@astrojs/internal-helpers@0.1.2': {}
@@ -2873,6 +2889,8 @@ snapshots:
     optional: true
 
   '@fastify/busboy@2.1.1': {}
+
+  '@github/relative-time-element@4.4.0': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
