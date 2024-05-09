@@ -13,10 +13,10 @@ import { jobs } from "@/constants/jobs";
         jobs.map((job) => (
           <li class="card-items">
             <h3 class="text-lg font-medium">{job.title} at 
-              <a href={job.link} class="text-primary-500 hover:underline">{job.company}</a>
+              <a href={job.link} target="_blank" class="text-primary-500 hover:underline">{job.company}</a>
             </h3>
             <Time format="duration" datetime={job.startDate} tense="past" precision="month" />
-            <p class="mt-4">{job.description}</p>
+            <p class="mt-4 whitespace-pre-line text-gray-400">{job.description}</p>
           </li>
         ))
       }

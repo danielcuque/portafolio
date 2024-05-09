@@ -4,6 +4,5 @@ export interface IJob {
     company: string;
     location: string;
     startDate: Date;
-    endDate: Date | null;
     description: string;
 }
