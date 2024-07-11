@@ -13,15 +13,15 @@ export const navItems: NavItem[] = [
         path: '#projects'
     },
     {
-        name: 'Contact',
-        path: '#contact'
-    },
-    {
         name: 'Contributions',
         path: '#contributions'
     },
     {
         name: 'Work Experience',
         path: '#work-experience'
+    },
+    {
+        name: 'Contact',
+        path: '#contact'
     }
 ]
